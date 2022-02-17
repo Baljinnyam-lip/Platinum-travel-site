@@ -11,4 +11,12 @@ module.exports = {
   // Шар алдаа зааж буй бичигийг арилгах
   mode: "development",
   watch: true,
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
